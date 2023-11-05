@@ -28,3 +28,32 @@
             | You Got A New Like From ...
       .noti-foot.text-center: a(href="#") View All Notifications
   i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .username(data-bs-toggle='dropdown' aria-expanded='false') 
+      img.avatar.rounded-circle(src="imgs/avatar.jpg", alt="User Avatar")
+      span.user Abdullah Haidar 
+      i.fa.fa-angle-down.fa-lg
+    ul.dropdown-menu.dropdown-menu-right
+      .user-info
+        h3 Abdullah Haidar 
+        p Premium Member 
+      hr
+      ul.activities-list.list-unstyled 
+        li Added Comment on Post "How To Make Bla Bla"
+        li Created Post on Category "Science"
+        li Created Chart on Charts Page
+        li Added Comment on Post "How To Make Bla Bla"
+      hr
+      .row.usermenu-links 
+        .col  
+          .link-box
+            i.fa.fa-gear.fa-lg.fa-fw
+            span Settings
+        .col 
+          .link-box
+            i.fa.fa-user.fa-lg.fa-fw
+            span My Profile
+        .col 
+          .link-box
+            i.fa.fa-power-off.fa-lg.fa-fw
+            span Logout

@@ -97,4 +97,85 @@
       }
     }
   }
+  .usermenu-container {
+    float: right;
+    .username {
+      cursor: pointer;
+      .avatar {
+        width: 35px;
+        height: 35px;
+      }
+      .user {
+        font-weight: bold;
+        color: #777;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+    .dropdown-menu {
+      min-width: 450px;
+      border: none;
+      padding: 20px;
+      box-shadow: 0 0 10px 0px #ddd;
+      top: 10px !important;
+      border:1px solid #dfdfdf;
+      border-radius: 6px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 30px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #ddd transparent;
+      }
+      .user-info {
+        h3 {
+          font-weight: bold;
+        }
+        p {
+          color: #888;
+        }
+      }
+      .activities-list {
+        li {
+          padding: 10px;
+        }
+      }
+      .usermenu-links  {
+        .link-box {
+          background-color: #fff;
+          padding: 10px 5px;
+          border: 1px solid #f3f3f3;
+          border-radius: 6px;
+          font-size: 14px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          span {
+            padding-right: 5px;
+          }
+          i {
+            position: relative;
+            top: 3px;
+            &::after {
+              content: "";
+              border: 1px solid #e1e1e1;
+              position: relative;
+              right: -8px;
+            }
+            &.fa-gear {
+              color: #2980b9;
+            }
+            &.fa-user {
+              color: #16a085;
+            }
+            &.fa-power-off {
+              color: #c0392b;
+            }
+          }
+        }
+      }
+    }
+  }
 }
