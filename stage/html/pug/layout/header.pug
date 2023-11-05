@@ -1,7 +1,7 @@
 .header 
   i.fa.fa-exchange.fa-lg.toggle-sidebar
   .dropdown.notifications-container
-    i.fa.fa-bell.fa-lg.toggle-notifications( data-bs-toggle='dropdown' aria-expanded='false')
+    i.fa.fa-bell.fa-lg.header-icon.toggle-notifications( data-bs-toggle='dropdown' aria-expanded='false')
     ul.dropdown-menu
       .noti-head 
         | Notifications
@@ -9,21 +9,22 @@
       .noti-content 
         ul.list-unstyled
           li 
-            i.fa.fa-envelope.fa-lg 
+            i.fa.fa-envelope.fa-lg.email-icon
             | You Got A New Email From ...
           li 
-            i.fa.fa-money-bill-wave.fa-lg 
+            i.fa.fa-money-bill-wave.fa-lg.money-icon
             | You Got Money From ...
           li 
-            i.fa.fa-heart.fa-lg 
+            i.fa.fa-heart.fa-lg.heart-icon 
             | You Got A New Like From ...
           li 
-            i.fa.fa-envelope.fa-lg 
+            i.fa.fa-envelope.fa-lg.email-icon
             | You Got A New Email From ...
           li 
-            i.fa.fa-money-bill-wave.fa-lg 
+            i.fa.fa-money-bill-wave.fa-lg.money-icon
             | You Got Money From ...
           li 
-            i.fa.fa-heart.fa-lg 
+            i.fa.fa-heart.fa-lg.heart-icon
             | You Got A New Like From ...
       .noti-foot.text-center: a(href="#") View All Notifications
+  i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon

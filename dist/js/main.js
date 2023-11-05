@@ -8,8 +8,13 @@ $(function () {
     $(this).find(".fa-angle-right").toggleClass("down");
     $(this).next(".child-links").slideToggle();
   });
+  // Open / Close FullScreen
+  $(".toggle-fullscreen").on("click", function () {
+    $(this).toggleClass("full-screen");
+    if ($(this).hasClass("full-screen")) {
+      document.documentElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  });
 });
-
-const myMap = new Map();
-
-const mySet = new Set();
