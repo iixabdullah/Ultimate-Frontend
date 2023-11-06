@@ -24,15 +24,26 @@ $(function () {
   });
 
   // Switch Colors Theme
-  let themesClasses = [];
+  let themeClasses = [];
   $(".color-options li").each(function () {
-    themesClasses.push($(this).data("theme"));
+    themeClasses.push($(this).data("theme"));
   });
 
   $(".color-options li").on("click", function () {
     $(this).addClass("active").siblings().removeClass("active");
     $("body")
-      .removeClass(themesClasses.join(" "))
+      .removeClass(themeClasses.join(" "))
       .addClass($(this).data("theme"));
+  });
+
+  // Switch Font Options
+  let fontClasses = [];
+  $(".font-options select option").each(function () {
+    fontClasses.push($(this).val());
+  });
+  $(".font-options select").on("change", function () {
+    $("body")
+      .removeClass(fontClasses.join(" "))
+      .addClass($(this).find("option:selected").val());
   });
 });
