@@ -17,4 +17,9 @@ $(function () {
       document.exitFullscreen();
     }
   });
+  // Toggle Settigns
+  $(".toggle-settings").on("click", function () {
+    $(this).find("i").toggleClass("fa-spin");
+    $(this).parent().toggleClass("hide-settings");
+  });
 });
